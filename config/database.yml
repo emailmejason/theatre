@@ -1,0 +1,28 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: theatre_development
+  pool: 5
+  username: admin
+  password:
+  host: localhost
+
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: theatre_test
+  pool: 5
+  username: admin
+  password:
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: theatre_production
+  pool: 5
+  username: admin
+  password:
+  host: localhost
