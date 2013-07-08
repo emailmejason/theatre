@@ -1,5 +1,26 @@
 <h1>Movies#index</h1>
 <p>Find me in app/views/movies/index.html.erb</p>
-<% @movies.each do |x| %>
-<%= x.name %>
+
+
+
+
+
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th>Commentor name</th>
+    <th>Article</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+  <% @movies.each do |x| %>
+  <tr>
+    <td><%= link_to(x.name, movie_path(x.id)) %></td>
+  </tr>
 <% end %>
+
+</table>

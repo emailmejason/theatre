@@ -1,5 +1,5 @@
 class Movie < ActiveRecord::Base
-  has_many :tickets
+  has_and_belongs_to_many :tickets
   attr_accessible :name, :summary
 
   validates :name, :presence => true
