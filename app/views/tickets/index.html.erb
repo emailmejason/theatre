@@ -1,2 +1,24 @@
-<h1>Tickets#index</h1>
-<p>Find me in app/views/tickets/index.html.erb</p>
+<h1>Tickets</h1>
+
+
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Seat</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @tickets.each do |ticket| %>  <tr>
+    <td><%= ticket.movie.name %></td>
+    <td><%= ticket.date %></td>
+    <td><%= ticket.showtime %></td>
+    <td><%= ticket.seat %></td>
+
+ </tr>
+<% end %>
+</table>
