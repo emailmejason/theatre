@@ -1,3 +1,4 @@
 class Ticket < ActiveRecord::Base
-  attr_accessible :date, :seat, :showtime, :theatre
+  belongs_to :movie
+  attr_accessible :date, :seat, :showtime, :theatre, :movie_id
 end
